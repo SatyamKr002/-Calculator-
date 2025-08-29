@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background-color: #1e1e1e;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 425px;
+  background-color: #292929;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+.main input[type="text"] {
+  height: 60px;
+  text-align: right;
+  padding: 3px 6px;
+  font-size: 30px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.historyInput {
+  display: flex;
+  justify-content: space-between;
+}
+
+.viewHistory,
+.history {
+  color: #aaa;
+  font-size: 16px;
+  margin-bottom: 8px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.btn input[type="button"] {
+  width: 24%;
+  padding: 1px;
+  margin: 1.5px 0px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.btn input[value="C"],
+.btn input[value="%"],
+.btn input[value="←"],
+.btn input[value="/"],
+.btn input[value="x"],
+.btn input[value="-"],
+.btn input[value="+"] {
+  background-color: #f8ba5d;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.btn input[value="="] {
+  background-color: #34c759;
+  color: white;
+}
+.btn input[value="←"] {
+  background-color: #ff5855;
+  color: white;
+}
+
+.btn input[value="C"]:hover,
+.btn input[value="%"]:hover,
+.btn input[value="←"]:hover,
+.btn input[value="/"]:hover,
+.btn input[value="x"]:hover,
+.btn input[value="-"]:hover,
+.btn input[value="+"]:hover,
+.btn input[value="="]:hover {
+  opacity: 0.9;
+}
